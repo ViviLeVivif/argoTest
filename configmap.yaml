@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: configmap-exo2
-data:
-  PORT: "4000"
-  WELCOME_MESSAGE: "Configmap fonctionne"
