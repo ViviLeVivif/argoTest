@@ -7,5 +7,6 @@ metadata:
 spec:
   ports:
   - port: 4000
+    name: web
   selector:
     app: pod-exo2
