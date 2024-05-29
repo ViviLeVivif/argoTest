@@ -29,3 +29,13 @@ spec:
             configMapKeyRef:
               name: configmap-exo2
               key: WELCOME_MESSAGE
+        - name: MONGO_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secrets
+              key: .MONGO_USERNAME
+        - name: MONGO_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secrets
+              key: .MONGO_PASSWORD
