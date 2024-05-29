@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-exo2
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: exo2.localhost
+    http:
+      paths:
+      - backend:
+          service:
+            name: service-exo2
+            port:
+              number: 4000
+        path: /
+        pathType: Prefix
